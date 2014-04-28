@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">OxygenSensor</string>
+    <string name="action_settings">Settings</string>
+    <string name="togglebutton_connect">Connect</string>
+    <string name="togglebutton_disconnect">Disconnect</string>
+    <string name="button_record">Record</string>
+    <string name="button_update">Update</string>
+    <string name="button_stop">Stop</string>
+    <string name="edit_filename">Filename</string>
+    <string name="edit_samplerate">Rate</string>
+    <string name="radio_oneSite">One Site</string>
+    <string name="radio_twoSite">Two Site</string>
+    <string name="button_model">Model</string>
+    <string name="radio_O2">O2</string>
+    <string name="radio_air">Air</string>
+    <string name="radio_N2">N2</string>
+    <string name="button_collect">Collect</string>
+    
+    <string name="title_paired_devices">Paired Devices:</string>
+    <string name="title_other_devices">Other Devices:</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="scanning">Scanning for devices...</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">not connected</string>
+    <string name="not_connected">Not Connected</string>
+    
+    <string name="graph_intensity">Intensity</string>
+    <string name="graph_concentration">[C]</string>
+    <string name="calgraph_xlabel">[C]</string>
+    <string name="calgraph_ylabel">I0/I</string>
+
+</resources>

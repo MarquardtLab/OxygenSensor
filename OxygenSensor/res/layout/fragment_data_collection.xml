@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_dataCollection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:background="#eeeeee"
+    	android:descendantFocusability="beforeDescendants"
+    	android:focusableInTouchMode="true" >
+    	
+    	<ToggleButton android:id="@+id/toggleButtonConnect"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textOn="@string/togglebutton_disconnect"
+        	android:textOff="@string/togglebutton_connect"
+        	android:onClick="connectBluetooth" />
+    	
+    	<Button 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/button_record"
+        	android:onClick="recordData" />
+    	
+    	<EditText android:id="@+id/edit_filename"
+        	android:layout_weight="2"
+        	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:hint="@string/edit_filename" />
+    </LinearLayout>
+    
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:background="#eeeeee"
+    	android:descendantFocusability="beforeDescendants"
+    	android:focusableInTouchMode="true" >
+    	
+    	<EditText android:id="@+id/edit_samplerate"
+        	android:layout_weight="1"
+        	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:inputType="numberDecimal"
+        	android:hint="@string/edit_samplerate"/>
+    	
+    	<Button 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/button_update"
+        	android:onClick="updateSampleRate" />
+    	
+    	<Button 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/button_stop"
+        	android:onClick="stopCollecting" />
+    </LinearLayout>
+
+    <com.example.oxygensensor.GraphView
+      android:id="@+id/MainGraph"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"/>
+ 
+</LinearLayout>

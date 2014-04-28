@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:background="#eeeeee"
+    	android:descendantFocusability="beforeDescendants"
+    	android:focusableInTouchMode="true" >
+    	
+    	<RadioGroup android:id="@+id/radioModel"
+   	    	android:layout_width="wrap_content"
+   	    	android:layout_height="wrap_content"
+   	    	android:orientation="horizontal"  >
+    	    	
+    	    <RadioButton android:id="@+id/radioOneSite"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/radio_oneSite" />
+    	    
+    	    <RadioButton android:id="@+id/radioTwoSite"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/radio_twoSite" />
+    	</RadioGroup>
+    	
+    	<Button android:id="@+id/buttonModel"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/button_model"
+        	android:onClick="createModel" />
+    </LinearLayout>
+    	
+   	<LinearLayout 
+   	android:layout_width="match_parent"
+   	android:layout_height="wrap_content"
+   	android:orientation="horizontal"
+   	android:background="#eeeeee"
+   	android:descendantFocusability="beforeDescendants"
+   	android:focusableInTouchMode="true" >
+    	
+    	<RadioGroup android:id="@+id/radioCollect"
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="wrap_content"
+    	    	android:orientation="horizontal" >
+    	    	
+    	    <RadioButton android:id="@+id/radioO2"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/radio_O2" />
+    	    
+    	    <RadioButton android:id="@+id/radioAir"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/radio_air" />
+    	    	
+    	    <RadioButton android:id="@+id/radioN2"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/radio_N2" />
+    	</RadioGroup>
+    	
+    	<Button android:id="@+id/buttonCollect"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/button_collect"
+        	android:onClick="collectData" />
+    </LinearLayout>
+    
+    <com.example.oxygensensor.SubGraphView
+    	android:id="@+id/SubGraph"
+      	android:layout_width="fill_parent"
+      	android:layout_height="0dp"
+      	android:layout_weight="1"/>
+        
+    <com.example.oxygensensor.CalGraphView
+        android:id="@+id/CalGraph"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+     
+ 
+</LinearLayout>
